@@ -3,6 +3,8 @@
 ### Description
 The [Hangman](<https://en.wikipedia.org/wiki/Hangman_(game)>) game is a simple game where one or more players try to guess a word, each turn suggesting a letter.
 
+![Hangman (Image)](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Hangman_game.jpg/800px-Hangman_game.jpg)
+
 In this implementation, we will not have the drawing of the man being hanged. We will just have the word with the letters appearing as more and more letters are guessed correctly.
 
 For a game like this, notebooks are really not a good idea. You'll notice the `.py` file extension in the coming files. These are **python** source files.
