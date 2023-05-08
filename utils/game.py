@@ -2,6 +2,8 @@
 import random
 # create a hangman class
 class hangman:
+    #creaate possible_words list
+    possible_words = ['apple', 'banana', 'becode', 'learning', 'mathematics', 'sessions']
        
     def __init__(self):
         """ Initializes a new attributes of the Hangman class.
@@ -14,10 +16,8 @@ class hangman:
         - A `wrongly_guessed_letters` attribute that contains a list of strings where each element will be a letter guessed by the user that is not in the `word_to_find`.
         - A `turn_count` attribute that contain the number of turns played by the player. This will be represented as an `int`.
         - An `error_count` attribute that contains the number of errors made by the player."""
-        #creaate possible_words list
-        self.possible_words = ['apple', 'banana', 'becode', 'learning', 'mathematics', 'sessions']
          #indicate where we get the word
-        self.word_to_find = random.choice(self.possible_words)
+        self.word_to_find = random.choice(hangman.possible_words)
         #indicate namber of lives
         self.lives = 5
        #indicate 1 letter and count the number of letter in the word_to_find
@@ -68,7 +68,6 @@ class hangman:
             # will call `play()` until the game is over 
             # (because the use guessed the word or because of a game over)
             self.play()
-            print(self.correctly_guessed_letters)
             #  will print `correctly_guessed_letters`, 
             # `bad_guessed_letters`, `life`, `error_count` 
             # and `turn_count` at the end of each turn.
