@@ -18,9 +18,9 @@ class Hangman:# create a hangman class
             letter = input("Enter a letter: ").lower() # asking to enter a letter
             if len(letter) == 1 and letter.isalpha():
                     if letter in self.word_to_find:
-                        for i in enumerate(self.word_to_find):
+                        for i, char in enumerate(self.word_to_find):
                         #if the letter is correct
-                            if self.word_to_find[i] == letter:
+                            if char == letter:
                                 self.correctly_guessed_letters[i] = letter
                                 
                     
